@@ -1,0 +1,40 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+    background-color: rgb(245, 245, 228);
+}
+
+
+.container{
+    text-align: center;
+    border: 3px solid black;
+    width: 70%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: fle;
+    height: auto;
+    margin: 10% auto;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+nav {
+    border-bottom: 3px solid black;
+}
+
+.button-section {
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 10px;
+}
