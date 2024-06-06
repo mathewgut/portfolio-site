@@ -3,6 +3,8 @@
 }
 
 
+
+
 body{
     background-color: rgb(245, 245, 228);
 }
@@ -33,6 +35,13 @@ nav {
     background-color: rgb(255, 247, 230);
     height: 100%;
     overflow: hidden;
+    margin-top: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .button-section {
@@ -52,6 +61,50 @@ button {
     padding: 5px;
     padding-left: 7px;
     padding-right: 7px;
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+  
+@-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  
+@keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+
+button:hover {
+    transition: ease-in-out 0.2s;
+    scale: 120%;
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+        
+}
+
+button::after {
+    transition: ease-in-out 0.2s;
+    scale: 100;
 }
 
 hr {
