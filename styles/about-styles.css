@@ -1,16 +1,18 @@
 .about-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 85%;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border: 3px solid black;
-    max-width: fit-content;
-    min-width: fit-content;
+    max-width: 600px;
+    min-width: min-content;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
     background-color: rgb(255, 247, 230);
+    overflow: visible;
 }
 
 .about-duck {
@@ -35,11 +37,11 @@
     justify-content: space-around;
     padding-right: 10px;
     padding-left: 20px;
-    margin-bottom: -20;
+    margin-bottom: -20px;
 }
 
 
-.about-duck figcaption {
+.about-section figcaption {
     padding: 10px;
     margin: 0 auto;
 }
@@ -49,10 +51,48 @@
    flex-direction: column;
    padding: 10px;
    padding-top: 0;
+   min-width: 100px;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
-.about-intro-text p {
-    text-align: center;
-    padding-left: 20px;
+
+.about-intro-text ul {
+    list-style: inside;
+    list-style-type: circle;
 }
 
+.about-intro-text ul li{
+    padding: 5px;
+}
+
+#small-me {
+    max-height: auto;
+    width: 300px;
+    border: 2px solid;
+    margin-top: 0;
+}
+
+.about-section.history {
+    /*Will alter*/
+}
+
+.about-section.history figcaption {
+    width: 300px;
+    margin-bottom: 0px;
+    font-size: small;
+}
+
+.about-section.about-section.history p {
+    padding: 20px;
+    padding-bottom: -10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* add js to create a transition for an on-click event to make larger*/
+
+#small-me:hover {
+    transition: ease-in-out 0.25s;
+    scale: 125%;
+}

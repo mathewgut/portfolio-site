@@ -126,6 +126,7 @@ hr {
     justify-content: center;
     background-color: rgb(255, 247, 230);
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 a {
